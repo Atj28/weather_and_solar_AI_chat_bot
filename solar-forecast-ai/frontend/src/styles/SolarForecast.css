@@ -1,0 +1,216 @@
+.chat-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chat-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.chat-messages {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.message-header small {
+  margin-left: 10px;
+  color: #6c757d;
+}
+
+.user-message .message-content {
+  background-color: #007bff;
+  color: white;
+  border-radius: 15px 15px 0 15px;
+}
+
+.assistant-message .message-content {
+  background-color: white;
+  border-radius: 15px 15px 15px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Weather Analysis Components */
+.weather-analysis {
+  padding: 15px;
+}
+
+.location-info {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.location-info h4 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.location-info small {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.summary-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.summary-section .lead {
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* Forecast Cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #495057;
+}
+
+/* Hourly Forecast */
+.hourly-forecast .card {
+  background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+}
+
+/* Daily Forecast */
+.daily-forecast .card {
+  margin-bottom: 10px;
+}
+
+/* Marine Conditions */
+.marine-conditions .card {
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+}
+
+/* Air Quality */
+.air-quality .card {
+  background: linear-gradient(to bottom right, #f1f8e9, #ffffff);
+}
+
+/* Recommendations */
+.recommendations-section .card {
+  background: linear-gradient(to bottom right, #fff3e0, #ffffff);
+}
+
+.recommendations-section .card-title {
+  color: #f57c00;
+}
+
+/* Input Area */
+.chat-input {
+  margin-top: 20px;
+}
+
+.input-group {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-control {
+  border: none;
+  padding: 12px 15px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  font-weight: 600;
+  border: none;
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Alerts */
+.alert {
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.alert-danger {
+  background-color: #fff5f5;
+  border-color: #feb2b2;
+  color: #c53030;
+}
+
+.alert-info {
+  background-color: #ebf8ff;
+  border-color: #90cdf4;
+  color: #2b6cb0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chat-container {
+    padding: 10px;
+  }
+
+  .message-content {
+    padding: 10px !important;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .hourly-forecast .col-md-4 {
+    padding: 5px;
+  }
+}
+
+/* Loading Spinner */
+.spinner-border {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-width: 0.2em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message {
+  animation: fadeIn 0.3s ease-out;
+} 
